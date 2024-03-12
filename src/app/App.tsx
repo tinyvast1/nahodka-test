@@ -1,7 +1,9 @@
+import { Counter } from "@/entities/counter"
+
 function App() {
   return (
     <>
-      Hello
+      <Counter/>
     </>
   )
 }
