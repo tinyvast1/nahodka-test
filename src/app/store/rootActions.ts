@@ -1,5 +1,5 @@
-import { counterActions } from "@/entities/counter/store/slice";
+import { taskActions } from "@/entities/task/store/slice";
 
 export const rootActions = {
-  ...counterActions,
+  ...taskActions,
 };

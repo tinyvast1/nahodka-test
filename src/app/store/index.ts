@@ -1,8 +1,8 @@
-import { CounterReducer } from '@/entities/counter'
+import { taskReducer } from '@/entities/task/store/slice'
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
 const redusers = combineReducers({
-   counter: CounterReducer
+   task: taskReducer
 })
 
 export const store = configureStore({
