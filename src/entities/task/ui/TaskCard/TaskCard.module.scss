@@ -1,0 +1,43 @@
+.TaskCard {
+  background: var(--bg-secondary);
+  border-radius: var(--bor-rad-m);
+  padding: 8px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: var(--grid-column-task-card);
+  gap: 6px;
+  cursor: pointer;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &.name {
+    position: relative;
+    padding-right: 6px;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2px;
+      background: var(--color-primary);
+      height: 100%;
+      opacity: 0.5;
+    }
+  }
+}
+
+svg {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+}

@@ -1,10 +1,12 @@
 export interface Task {
-  id: number,
-  name: string,
-  description: string,
-  status: boolean
+  readonly id: number;
+  name: string;
+  description: string;
+  status: boolean;
 }
 
 export interface TaskState {
-  tasks: Task[]
+  tasks: Task[];
+  isOpenModal: boolean;
+  idActiveTaskModal: number;
 }

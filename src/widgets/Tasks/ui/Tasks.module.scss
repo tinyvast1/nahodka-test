@@ -1,0 +1,14 @@
+.Tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: calc(100vh - (var(--gap-main-block) * 2));
+}
+
+.TasksHeader {
+  display: grid;
+  grid-template-columns: var(--grid-column-task-card);
+  gap: 16px;
+  padding-inline: 8px;
+  opacity: 0.4;
+}

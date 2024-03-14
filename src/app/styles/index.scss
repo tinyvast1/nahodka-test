@@ -1,1 +1,20 @@
-@import './reset.scss';
+@import "./variabless.scss";
+@import "./reset.scss";
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body {
+  font: 16px / 120% "Fira Code";
+}
+
+.app {
+  margin: var(--gap-main-block);
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 350px auto;
+  gap: var(--gap-main-block);
+}

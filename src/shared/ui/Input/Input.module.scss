@@ -1,0 +1,11 @@
+.Input {
+  border: 2px solid var(--color-primary);
+  border-radius: var(--bor-rad-m);
+  padding: 6px;
+  &:focus {
+    outline: 1px solid var(--ombre-color-primary);
+  }
+}
+.Textarea {
+  resize: none;
+}
